@@ -38,7 +38,7 @@ app.get("/auth/meta", (req, res) => {
       redirect_uri: META_REDIRECT_URI,
       state,
       response_type: "code",
-      scope: ""
+      scope: "ads_read"
     });
     res.redirect(`https://www.facebook.com/${GRAPH_VERSION}/dialog/oauth?${p.toString()}`);
   } catch (e) {
