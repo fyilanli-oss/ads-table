@@ -154,5 +154,3 @@ app.get("/api/meta/insights", async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Ads Table Meta running on http://localhost:${PORT}`));
-
-
